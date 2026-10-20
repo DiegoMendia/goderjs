@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GODER JS | Técnico de aire acondicionado y electricista a domicilio</title>
+  <meta name="description" content="Instalación, mantenimiento y reparación de aire acondicionado, instalaciones eléctricas y tomacorrientes a domicilio. GODER JS, de Jose Severich. Lunes a viernes de 8 a 19 h. Pedí tu presupuesto por WhatsApp.">
+  <meta name="author" content="Jose Severich">
+  <meta name="theme-color" content="#04101f">
+  <meta name="color-scheme" content="light">
+  <!-- TODO (al publicar): agregar <link rel="canonical" href="https://TU-DOMINIO/"> y og:url con la URL final. -->
+  <meta property="og:title" content="GODER JS | Aire acondicionado y electricidad a domicilio">
+  <meta property="og:description" content="Técnico integral para tu casa: aire acondicionado y electricidad domiciliaria. Presupuesto por WhatsApp. Responsabilidad y confianza.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_AR">
+  <meta property="og:site_name" content="GODER JS">
+  <!-- TODO (al publicar): og:image debe ser una URL absoluta (https://TU-DOMINIO/assets/og-image.jpg) para que WhatsApp la muestre. -->
+  <meta property="og:image" content="assets/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="GODER JS, Técnico Integral: aire acondicionado y electricidad domiciliaria">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="GODER JS | Aire acondicionado y electricidad a domicilio">
+  <meta name="twitter:description" content="Técnico integral para tu casa. Presupuesto por WhatsApp.">
+  <meta name="twitter:image" content="assets/og-image.jpg">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preload" href="assets/fonts/manrope-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/sora-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/montserrat-latin-wght-italic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    (function () {
+      var root = document.documentElement;
+      root.classList.add('js');
+      try {
+        var small = window.matchMedia('(max-width: 760px), (pointer: coarse) and (max-width: 1100px)').matches;
+        var weak = (navigator.deviceMemory && navigator.deviceMemory <= 2) || (navigator.hardwareConcurrency && navigator.hardwareConcurrency <= 2);
+        var saver = navigator.connection && navigator.connection.saveData;
+        if (small || weak || saver) { root.classList.add('is-lite'); }
+      } catch (e) {}
+    })();
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "name": "GODER JS",
+    "alternateName": "GODER JS — Técnico Integral",
+    "description": "Instalación, mantenimiento y reparación de aire acondicionado. Instalaciones eléctricas y tomacorrientes para el hogar.",
+    "image": "assets/og-image.jpg",
+    "telephone": "+54 9 351 558-0535",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "AR"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Servicios",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Instalación de aire acondicionado" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Mantenimiento preventivo de aire acondicionado" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Reparación de aire acondicionado" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Instalaciones eléctricas domiciliarias" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Instalación y recambio de tomacorrientes" } }
+      ]
+    },
+    "founder": {
+      "@type": "Person",
+      "name": "Jose Severich"
+    },
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "08:00",
+      "closes": "19:00"
+    }],
+    "knowsAbout": ["Aire acondicionado", "Electricidad domiciliaria", "Instalaciones y reparaciones"]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <svg class="svg-sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <defs>
+      <linearGradient id="ringGrad" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#2a92f3"/>
+        <stop offset=".52" stop-color="#37b9ea"/>
+        <stop offset=".53" stop-color="#7bd244"/>
+        <stop offset="1" stop-color="#4da51f"/>
+      </linearGradient>
+    </defs>
+    <symbol id="i-brand" viewBox="0 0 48 48">
+      <circle cx="24" cy="24" r="23" fill="#061a30"/>
+      <path d="M24 3a21 21 0 0 0 0 42" fill="none" stroke="#2a92f3" stroke-width="2"/>
+      <path d="M24 45a21 21 0 0 0 0-42" fill="none" stroke="#6ac33a" stroke-width="2"/>
+      <path d="M12 24.5 24 14l12 10.5" fill="none" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M15 24v11.5h18V24" fill="none" stroke="#ffffff" stroke-opacity=".3" stroke-width="2" stroke-linejoin="round"/>
+      <path d="M26 21.5 20.5 29h4.4l-1.1 5.5 6-8.2h-4.4l1.6-4.8Z" fill="#8be354"/>
+    </symbol>
+    <symbol id="i-snowflake" viewBox="0 0 24 24">
+      <path d="M12 2v20M4.2 6.5l15.6 11M19.8 6.5 4.2 17.5"/>
+      <path d="m12 6-2.4 2.4M12 6l2.4 2.4M12 18l-2.4-2.4M12 18l2.4-2.4M6.9 9.9l-2.3-.7M6.9 9.9l-.8 2.3M17.1 9.9l2.3-.7M17.1 9.9l.8 2.3M6.9 14.1l-2.3.7M6.9 14.1l-.8-2.3M17.1 14.1l2.3.7M17.1 14.1l.8-2.3"/>
+    </symbol>
+    <symbol id="i-zap" viewBox="0 0 24 24">
+      <path d="M13 2 4.5 13.5H11l-1 8.5 8.5-11.5H12l1-8.5Z"/>
+    </symbol>
+    <symbol id="i-home" viewBox="0 0 24 24">
+      <path d="m3 10.5 9-7.5 9 7.5V20a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 20v-9.5Z"/>
+      <path d="M9 21.5v-7h6v7"/>
+    </symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="9"/>
+      <path d="M12 7v5l3.5 2"/>
+    </symbol>
+    <symbol id="i-message" viewBox="0 0 24 24">
+      <path d="M21 11.5a8.5 8.5 0 0 1-12.6 7.4L3 21l2.1-5.4A8.5 8.5 0 1 1 21 11.5Z"/>
+      <path d="M8 10.5h8M8 14h5"/>
+    </symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24">
+      <rect x="3" y="5" width="18" height="16" rx="2"/>
+      <path d="M16 3v4M8 3v4M3 11h18"/>
+    </symbol>
+    <symbol id="i-check-circle" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="9"/>
+      <path d="m8 12.5 2.6 2.6L16.5 9"/>
+    </symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24">
+      <path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3Z"/>
+      <path d="m8.5 12 2.3 2.3 4.7-5"/>
+    </symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24">
+      <path d="m12 3 9 5-9 5-9-5 9-5Z"/>
+      <path d="m3 13 9 5 9-5"/>
+    </symbol>
+    <symbol id="i-wind" viewBox="0 0 24 24">
+      <path d="M3 8h11a3 3 0 1 0-3-3M3 12h15a3 3 0 1 1-3 3M3 16h8a2 2 0 1 1-2 2"/>
+    </symbol>
+    <symbol id="i-check" viewBox="0 0 24 24">
+      <path d="m4 12.5 5 5L20 6.5"/>
+    </symbol>
+    <symbol id="i-arrow-right" viewBox="0 0 24 24">
+      <path d="M4 12h15M13 6l6 6-6 6"/>
+    </symbol>
+    <symbol id="i-arrow-up" viewBox="0 0 24 24">
+      <path d="M12 20V4M6 10l6-6 6 6"/>
+    </symbol>
+    <symbol id="i-chevron-down" viewBox="0 0 24 24">
+      <path d="m6 9 6 6 6-6"/>
+    </symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24">
+      <path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/>
+    </symbol>
+    <symbol id="i-star" viewBox="0 0 24 24">
+      <path d="m12 2.8 2.8 5.7 6.2.9-4.5 4.4 1 6.2-5.5-2.9-5.5 2.9 1-6.2L3 9.4l6.2-.9L12 2.8Z"/>
+    </symbol>
+    <symbol id="i-expand" viewBox="0 0 24 24">
+      <path d="M14 3h7v7M10 21H3v-7M21 3l-7.5 7.5M3 21l7.5-7.5"/>
+    </symbol>
+    <symbol id="i-close" viewBox="0 0 24 24">
+      <path d="M5 5l14 14M19 5 5 19"/>
+    </symbol>
+    <symbol id="i-arrow-left" viewBox="0 0 24 24">
+      <path d="M20 12H5M11 6l-6 6 6 6"/>
+    </symbol>
+    <symbol id="i-map-pin" viewBox="0 0 24 24">
+      <path d="M20 10c0 5.5-8 12-8 12S4 15.5 4 10a8 8 0 1 1 16 0Z"/>
+      <circle cx="12" cy="10" r="2.6"/>
+    </symbol>
+    <symbol id="i-whatsapp" viewBox="0 0 24 24">
+      <path d="M20.52 3.48A11.86 11.86 0 0 0 12.05 0C5.46 0 .1 5.35.1 11.93c0 2.1.55 4.15 1.6 5.96L0 24l6.27-1.64a11.93 11.93 0 0 0 5.77 1.47h.01c6.58 0 11.94-5.35 11.94-11.93 0-3.19-1.24-6.19-3.47-8.42ZM12.05 21.8h-.01a9.9 9.9 0 0 1-5.04-1.38l-.36-.21-3.72.97.99-3.63-.24-.37a9.86 9.86 0 0 1-1.51-5.25c0-5.45 4.44-9.88 9.9-9.88a9.83 9.83 0 0 1 9.89 9.89c0 5.45-4.44 9.86-9.9 9.86Zm5.42-7.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.06 2.88 1.21 3.08.15.2 2.09 3.19 5.07 4.47.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.42-.07-.12-.27-.2-.57-.35Z"/>
+    </symbol>
+  </svg>
+
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a class="brand" href="#inicio" aria-label="GODER JS, ir al inicio">
+        <span class="brand-mark"><svg viewBox="0 0 48 48" aria-hidden="true"><use href="#i-brand"/></svg></span>
+        <span class="brand-copy">
+          <span class="brand-name">GODER <em>JS</em></span>
+          <span class="brand-sub">Técnico Integral</span>
+        </span>
+      </a>
+      <nav class="site-nav" aria-label="Navegación principal">
+        <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="primaryNav" aria-label="Abrir menú">
+          <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links" id="primaryNav">
+          <a class="nav-link" href="#servicios">Servicios</a>
+          <a class="nav-link" href="#trabajos">Trabajos</a>
+          <a class="nav-link" href="#sobre-mi">Sobre mí</a>
+          <a class="nav-link" href="#proceso">Cómo trabajo</a>
+          <a class="nav-link" href="#preguntas">Preguntas</a>
+          <a class="btn btn--header js-wa" data-wa="Hola GODER JS! Quiero pedir un presupuesto." href="#contacto">
+            <svg class="icon icon--fill" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+            Pedir presupuesto
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="hero" id="inicio">
+      <div class="hero-bg" aria-hidden="true">
+        <span class="ghost-word ghost-word--ice">FRÍO</span>
+        <span class="ghost-word ghost-word--power">ENERGÍA</span>
+      </div>
+      <canvas class="hero-canvas" id="heroCanvas" aria-hidden="true"></canvas>
+      <div class="hero-vignette" aria-hidden="true"></div>
+
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="hero-eyebrow" data-reveal>
+            <span class="dot dot--ice"></span>
+            Aire acondicionado
+            <span class="sep">+</span>
+            Electricidad domiciliaria
+            <span class="dot dot--power"></span>
+          </p>
+
+          <h1 data-reveal style="--delay:.12s">Aire acondicionado y electricidad, con <span class="text-gradient">un solo técnico</span>.</h1>
+          <p class="hero-sub" data-reveal style="--delay:.18s">Instalación, mantenimiento y reparaciones de aire; instalaciones eléctricas y tomacorrientes. En GODER JS tenés un técnico integral, trato directo y respuesta a la brevedad.</p>
+          <div class="hero-actions" data-reveal style="--delay:.24s">
+            <a class="btn btn--primary" href="#contacto">
+              Pedir presupuesto
+              <svg class="icon icon--arrow" aria-hidden="true"><use href="#i-arrow-right"/></svg>
+            </a>
+            <a class="btn btn--glass js-wa" data-wa="Hola GODER JS! Quiero hacer una consulta." href="#contacto">
+              <svg class="icon icon--fill" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+              Hablar por WhatsApp
+            </a>
+            <a class="btn btn--ghost" href="tel:+5493515580535">
+              <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>
+              Llamar
+            </a>
+          </div>
+          <ul class="hero-meta" data-reveal style="--delay:.3s">
+            <li><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg>Lun a Vie · 8 a 19 h</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check-circle"/></svg>Respuesta a la brevedad</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg>Responsabilidad y confianza</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual">
+          <div class="logo-stage" data-reveal style="--delay:.06s">
+            <div class="logo-aura" aria-hidden="true"></div>
+            <div class="logo-orbit logo-orbit--blue" aria-hidden="true"></div>
+            <div class="logo-orbit logo-orbit--green" aria-hidden="true"></div>
+
+            <div class="logo-float">
+              <article class="logo-card" id="logoCard">
+                <span class="logo-glare" aria-hidden="true"></span>
+                <div class="emblem-wrap">
+                  <svg class="emblem" viewBox="0 0 120 120" aria-hidden="true">
+                    <circle cx="60" cy="60" r="56" fill="#ffffff"/>
+                    <path d="M60 4a56 56 0 0 0 0 112" fill="none" stroke="#238ce9" stroke-width="3.5" stroke-linecap="round"/>
+                    <path d="M60 116a56 56 0 0 0 0-112" fill="none" stroke="#69c33b" stroke-width="3.5" stroke-linecap="round"/>
+                    <path d="M25 61 60 31l35 30" fill="none" stroke="#0a2a56" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M77 43V27h9v21" fill="none" stroke="#0a2a56" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M32 63v26h56V63" fill="none" stroke="#0a2a56" stroke-opacity=".18" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    <g fill="none" stroke="#1685e4" stroke-width="2" stroke-linecap="round">
+                      <path d="M48 68v19M39.8 72.8l16.4 9.4M56.2 72.8 39.8 82.2"/>
+                      <path d="M48 71.5 45.8 74M48 71.5l2.2 2.5M48 83.5l-2.2-2.5M48 83.5l2.2-2.5"/>
+                    </g>
+                    <path d="M79 66 68.5 80.5H76l-1.6 9.5L85 74.5h-7.4L79 66Z" fill="#63bd32"/>
+                    <path d="M60 69v18" stroke="#dcecf8" stroke-width="1.2" stroke-dasharray="2 4" stroke-linecap="round"/>
+                  </svg>
+                </div>
+                <div class="logo-word" aria-label="GODER JS">
+                  <span class="word-goder">GODER</span><span class="word-js">JS</span>
+                </div>
+                <div class="logo-rule" aria-hidden="true">
+                  <span></span><b>Técnico Integral</b><span></span>
+                </div>
+                <div class="logo-chips">
+                  <span class="logo-chip logo-chip--ice"><svg class="icon" aria-hidden="true"><use href="#i-snowflake"/></svg>Aire</span>
+                  <span class="logo-chip logo-chip--power"><svg class="icon" aria-hidden="true"><use href="#i-zap"/></svg>Electricidad</span>
+                </div>
+                <p class="logo-sign">Jose Severich</p>
+              </article>
+            </div>
+
+            <span class="float-orb float-orb--ice" aria-hidden="true"><svg class="icon"><use href="#i-snowflake"/></svg></span>
+            <span class="float-orb float-orb--power" aria-hidden="true"><svg class="icon"><use href="#i-zap"/></svg></span>
+          </div>
+
+        </div>
+      </div>
+
+      <a class="scroll-cue" href="#servicios" aria-label="Ver servicios"><span></span></a>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <div class="marquee-group">
+          <span>Aire acondicionado</span><svg class="icon" aria-hidden="true"><use href="#i-snowflake"/></svg>
+          <span>Instalación</span><svg class="icon icon--green" aria-hidden="true"><use href="#i-home"/></svg>
+          <span>Mantenimiento preventivo</span><svg class="icon" aria-hidden="true"><use href="#i-wind"/></svg>
+          <span>Electricidad domiciliaria</span><svg class="icon icon--green" aria-hidden="true"><use href="#i-zap"/></svg>
+          <span>Tomacorrientes</span><svg class="icon" aria-hidden="true"><use href="#i-check-circle"/></svg>
+          <span>Instalaciones y reparaciones</span><svg class="icon icon--green" aria-hidden="true"><use href="#i-shield"/></svg>
+        </div>
+        <div class="marquee-group">
+          <span>Aire acondicionado</span><svg class="icon" aria-hidden="true"><use href="#i-snowflake"/></svg>
+          <span>Instalación</span><svg class="icon icon--green" aria-hidden="true"><use href="#i-home"/></svg>
+          <span>Mantenimiento preventivo</span><svg class="icon" aria-hidden="true"><use href="#i-wind"/></svg>
+          <span>Electricidad domiciliaria</span><svg class="icon icon--green" aria-hidden="true"><use href="#i-zap"/></svg>
+          <span>Tomacorrientes</span><svg class="icon" aria-hidden="true"><use href="#i-check-circle"/></svg>
+          <span>Instalaciones y reparaciones</span><svg class="icon icon--green" aria-hidden="true"><use href="#i-shield"/></svg>
+        </div>
+      </div>
+    </div>
+
+    <section class="section services" id="servicios">
+      <div class="container">
+        <div class="section-head split" data-reveal>
+          <div>
+            <span class="eyebrow">Servicios</span>
+            <h2>Dos especialidades, un mismo <span class="hl">standard</span>.</h2>
+          </div>
+          <p>Del confort del aire a la seguridad de tu instalación eléctrica. Todo resuelto con el mismo cuidado, la misma prolijidad y la atención directa de un técnico integral.</p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card service-card--ice" data-reveal style="--delay:.04s">
+            <div class="service-art service-art--ice">
+              <svg class="art-lines" viewBox="0 0 560 200" preserveAspectRatio="none" aria-hidden="true">
+                <path d="M-30 160c80-44 130 34 210 0s130 34 210 0 130 34 210 0"/>
+                <path d="M-30 180c80-44 130 34 210 0s130 34 210 0 130 34 210 0"/>
+                <path d="M-30 140c80-44 130 34 210 0s130 34 210 0 130 34 210 0"/>
+              </svg>
+              <span class="art-tag">Climatización</span>
+              <div class="art-badge">
+                <svg class="icon" aria-hidden="true"><use href="#i-snowflake"/></svg>
+              </div>
+              <span class="art-chip"><span class="art-dot"></span>Frío / Calor</span>
+            </div>
+            <div class="service-body">
+              <h3>Aire acondicionado</h3>
+              <p>Para que tu equipo funcione bien todo el año: desde la instalación hasta el mantenimiento y la reparación.</p>
+              <ul class="check-list">
+                <li><span class="check-mark"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg></span>Instalación de equipos</li>
+                <li><span class="check-mark"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg></span>Mantenimiento preventivo</li>
+                <li><span class="check-mark"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg></span>Reparaciones</li>
+              </ul>
+              <a class="service-link" href="#contacto" data-preselect="Instalación de aire acondicionado">
+                Consultar por aire
+                <span class="arrow"><svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></span>
+              </a>
+            </div>
+          </article>
+
+          <article class="service-card service-card--power" data-reveal style="--delay:.1s">
+            <div class="service-art service-art--power">
+              <svg class="art-lines" viewBox="0 0 560 200" preserveAspectRatio="none" aria-hidden="true">
+                <path d="M-20 160h115l28-38h92l22 44h108l24-50h98l26 36h110"/>
+                <path d="M-20 92h80l35 40h110l28-56h96l30 40h112l26-40h95"/>
+                <circle cx="123" cy="122" r="4"/><circle cx="381" cy="166" r="4"/><circle cx="417" cy="76" r="4"/><circle cx="523" cy="116" r="4"/>
+              </svg>
+              <span class="art-tag">Electricidad</span>
+              <div class="art-badge">
+                <svg class="icon" aria-hidden="true"><use href="#i-zap"/></svg>
+              </div>
+              <span class="art-chip"><span class="art-dot"></span>220 V</span>
+            </div>
+            <div class="service-body">
+              <h3>Electricidad domiciliaria</h3>
+              <p>Instalaciones seguras y bien terminadas para el uso diario de tu casa, pensadas para durar.</p>
+              <ul class="check-list">
+                <li><span class="check-mark"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg></span>Instalaciones eléctricas nuevas</li>
+                <li><span class="check-mark"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg></span>Instalación y recambio de tomacorrientes</li>
+                <li><span class="check-mark"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg></span>Reparaciones eléctricas</li>
+              </ul>
+              <a class="service-link" href="#contacto" data-preselect="Instalaciones eléctricas">
+                Consultar por electricidad
+                <span class="arrow"><svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></span>
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <div class="services-note" data-reveal style="--delay:.12s">
+          <div class="note-copy">
+            <span class="note-icon"><svg class="icon" aria-hidden="true"><use href="#i-message"/></svg></span>
+            <div>
+              <strong>¿No sabés por dónde empezar?</strong>
+              <p>Contame qué necesitás y te oriento sin vueltas.</p>
+            </div>
+          </div>
+          <a class="btn btn--soft js-wa" data-wa="Hola GODER JS! Tengo una consulta sobre un servicio." href="#contacto">
+            <svg class="icon icon--fill" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+            Hacer una consulta
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section works" id="trabajos">
+      <div class="container">
+        <div class="section-head split" data-reveal>
+          <div>
+            <span class="eyebrow">Trabajos</span>
+            <h2>Así queda un trabajo <span class="hl">bien hecho</span>.</h2>
+          </div>
+          <p>Algunos de los trabajos que realizo en casas y departamentos: instalaciones prolijas, bien terminadas y funcionando como corresponde.</p>
+        </div>
+
+        <!-- REEMPLAZAR: las 6 imágenes de assets/trabajos/ son de ejemplo (trabajo-1.jpg … trabajo-6.jpg).
+             Subí tus fotos reales con el mismo nombre (o cambiá el src y el texto alt de cada una).
+             Medida ideal: 1200 x 750 px (horizontal, proporción 16:10), JPG o WebP, menos de 250 KB cada una. -->
+        <div class="works-filters" role="group" aria-label="Filtrar trabajos" data-reveal style="--delay:.04s">
+          <button class="chip is-active" type="button" data-filter="all" aria-pressed="true">Todos</button>
+          <button class="chip" type="button" data-filter="aire" aria-pressed="false"><svg class="icon" aria-hidden="true"><use href="#i-snowflake"/></svg>Aire acondicionado</button>
+          <button class="chip chip--power" type="button" data-filter="electricidad" aria-pressed="false"><svg class="icon" aria-hidden="true"><use href="#i-zap"/></svg>Electricidad</button>
+        </div>
+
+        <ul class="works-grid" id="worksGrid">
+          <li class="work-item" data-cat="aire" data-reveal style="--delay:.04s">
+            <button class="work-card" type="button" data-full="assets/trabajos/trabajo-1.jpg" data-title="Instalación de split" data-desc="Equipo instalado con cañerías prolijas y desagüe correcto.">
+              <img src="assets/trabajos/trabajo-1.jpg" width="1200" height="750" loading="lazy" decoding="async" alt="Instalación de un equipo split de aire acondicionado en un living">
+              <span class="work-tag work-tag--ice"><svg class="icon" aria-hidden="true"><use href="#i-snowflake"/></svg>Aire</span>
+              <span class="work-expand" aria-hidden="true"><svg class="icon"><use href="#i-expand"/></svg></span>
+              <span class="work-cap"><strong>Instalación de split</strong><small>Cañerías prolijas y desagüe correcto</small></span>
+            </button>
+          </li>
+          <li class="work-item" data-cat="electricidad" data-reveal style="--delay:.1s">
+            <button class="work-card" type="button" data-full="assets/trabajos/trabajo-4.jpg" data-title="Tablero eléctrico" data-desc="Tablero ordenado, con térmicas rotuladas y todo identificado.">
+              <img src="assets/trabajos/trabajo-4.jpg" width="1200" height="750" loading="lazy" decoding="async" alt="Tablero eléctrico domiciliario con llaves térmicas ordenadas">
+              <span class="work-tag work-tag--power"><svg class="icon" aria-hidden="true"><use href="#i-zap"/></svg>Electricidad</span>
+              <span class="work-expand" aria-hidden="true"><svg class="icon"><use href="#i-expand"/></svg></span>
+              <span class="work-cap"><strong>Tablero eléctrico</strong><small>Térmicas ordenadas e identificadas</small></span>
+            </button>
+          </li>
+          <li class="work-item" data-cat="aire" data-reveal style="--delay:.16s">
+            <button class="work-card" type="button" data-full="assets/trabajos/trabajo-2.jpg" data-title="Mantenimiento preventivo" data-desc="Limpieza y revisión completa para que el equipo rinda todo el año.">
+              <img src="assets/trabajos/trabajo-2.jpg" width="1200" height="750" loading="lazy" decoding="async" alt="Mantenimiento y limpieza de un equipo de aire acondicionado">
+              <span class="work-tag work-tag--ice"><svg class="icon" aria-hidden="true"><use href="#i-snowflake"/></svg>Aire</span>
+              <span class="work-expand" aria-hidden="true"><svg class="icon"><use href="#i-expand"/></svg></span>
+              <span class="work-cap"><strong>Mantenimiento preventivo</strong><small>Limpieza y revisión completa</small></span>
+            </button>
+          </li>
+          <li class="work-item" data-cat="electricidad" data-reveal style="--delay:.04s">
+            <button class="work-card" type="button" data-full="assets/trabajos/trabajo-5.jpg" data-title="Recambio de tomacorrientes" data-desc="Tomacorrientes nuevos, firmes y bien terminados.">
+              <img src="assets/trabajos/trabajo-5.jpg" width="1200" height="750" loading="lazy" decoding="async" alt="Tomacorriente nuevo instalado en una pared">
+              <span class="work-tag work-tag--power"><svg class="icon" aria-hidden="true"><use href="#i-zap"/></svg>Electricidad</span>
+              <span class="work-expand" aria-hidden="true"><svg class="icon"><use href="#i-expand"/></svg></span>
+              <span class="work-cap"><strong>Recambio de tomacorrientes</strong><small>Firmes y bien terminados</small></span>
+            </button>
+          </li>
+          <li class="work-item" data-cat="aire" data-reveal style="--delay:.1s">
+            <button class="work-card" type="button" data-full="assets/trabajos/trabajo-3.jpg" data-title="Unidad exterior" data-desc="Unidad exterior colocada con soporte firme y buena ventilación.">
+              <img src="assets/trabajos/trabajo-3.jpg" width="1200" height="750" loading="lazy" decoding="async" alt="Unidad exterior de aire acondicionado instalada en la pared">
+              <span class="work-tag work-tag--ice"><svg class="icon" aria-hidden="true"><use href="#i-snowflake"/></svg>Aire</span>
+              <span class="work-expand" aria-hidden="true"><svg class="icon"><use href="#i-expand"/></svg></span>
+              <span class="work-cap"><strong>Unidad exterior</strong><small>Soporte firme y buena ventilación</small></span>
+            </button>
+          </li>
+          <li class="work-item" data-cat="electricidad" data-reveal style="--delay:.16s">
+            <button class="work-card" type="button" data-full="assets/trabajos/trabajo-6.jpg" data-title="Reparación eléctrica" data-desc="Diagnóstico y reparación de la falla, dejando todo funcionando.">
+              <img src="assets/trabajos/trabajo-6.jpg" width="1200" height="750" loading="lazy" decoding="async" alt="Reparación de una instalación eléctrica domiciliaria">
+              <span class="work-tag work-tag--power"><svg class="icon" aria-hidden="true"><use href="#i-zap"/></svg>Electricidad</span>
+              <span class="work-expand" aria-hidden="true"><svg class="icon"><use href="#i-expand"/></svg></span>
+              <span class="work-cap"><strong>Reparación eléctrica</strong><small>Falla resuelta y todo funcionando</small></span>
+            </button>
+          </li>
+        </ul>
+
+        <div class="reviews" aria-labelledby="reviewsTitle">
+          <div class="reviews-head" data-reveal>
+            <div>
+              <h3 id="reviewsTitle">Lo que dicen los clientes</h3>
+              <p>Opiniones de personas que ya confiaron en GODER JS.</p>
+            </div>
+          </div>
+
+          <!-- REEMPLAZAR: estas 3 reseñas son TEXTO DE EJEMPLO con nombres inventados.
+               Reemplazalas por opiniones reales de tus clientes (pedí permiso para publicarlas)
+               y borrá la clase "is-sample" de cada <figure> para que desaparezca la etiqueta "Ejemplo".
+               Si todavía no tenés reseñas reales, podés borrar este bloque entero (<div class="reviews">). -->
+          <div class="reviews-grid">
+            <figure class="review is-sample" data-reveal style="--delay:.04s">
+              <span class="sample-flag">Ejemplo</span>
+              <div class="stars" role="img" aria-label="5 de 5 estrellas">
+                <svg class="icon icon--fill"><use href="#i-star"/></svg><svg class="icon icon--fill"><use href="#i-star"/></svg><svg class="icon icon--fill"><use href="#i-star"/></svg><svg class="icon icon--fill"><use href="#i-star"/></svg><svg class="icon icon--fill"><use href="#i-star"/></svg>
+              </div>
+              <blockquote>Instaló el aire en un día, dejó todo limpio y me explicó cómo cuidarlo. Muy prolijo y puntual.</blockquote>
+              <figcaption><span class="avatar">M</span><span><strong>Nombre del cliente</strong><small>Barrio / zona</small></span></figcaption>
+            </figure>
+            <figure class="review is-sample" data-reveal style="--delay:.1s">
+              <span class="sample-flag">Ejemplo</span>
+              <div class="stars" role="img" aria-label="5 de 5 estrellas">
+                <svg class="icon icon--fill"><use href="#i-star"/></svg><svg class="icon icon--fill"><use href="#i-star"/></svg><svg class="icon icon--fill"><use href="#i-star"/></svg><svg class="icon icon--fill"><use href="#i-star"/></svg><svg class="icon icon--fill"><use href="#i-star"/></svg>
+              </div>
+              <blockquote>Me cambió los tomacorrientes y revisó el tablero. Trabajo serio y buen precio. Lo recomiendo.</blockquote>
+              <figcaption><span class="avatar avatar--power">L</span><span><strong>Nombre del cliente</strong><small>Barrio / zona</small></span></figcaption>
+            </figure>
+            <figure class="review is-sample" data-reveal style="--delay:.16s">
+              <span class="sample-flag">Ejemplo</span>
+              <div class="stars" role="img" aria-label="5 de 5 estrellas">
+                <svg class="icon icon--fill"><use href="#i-star"/></svg><svg class="icon icon--fill"><use href="#i-star"/></svg><svg class="icon icon--fill"><use href="#i-star"/></svg><svg class="icon icon--fill"><use href="#i-star"/></svg><svg class="icon icon--fill"><use href="#i-star"/></svg>
+              </div>
+              <blockquote>Respondió rápido por WhatsApp, vino el día acordado y el aire quedó funcionando perfecto.</blockquote>
+              <figcaption><span class="avatar">R</span><span><strong>Nombre del cliente</strong><small>Barrio / zona</small></span></figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="works-cta" data-reveal style="--delay:.12s">
+          <a class="btn btn--primary js-wa" data-wa="Hola GODER JS! Vi sus trabajos y quiero pedir un presupuesto." href="#contacto">
+            Quiero un trabajo así
+            <svg class="icon icon--fill" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <dialog class="lightbox" id="lightbox" aria-label="Vista ampliada del trabajo">
+      <div class="lightbox-inner">
+        <button class="lb-btn lb-close" type="button" id="lbClose" aria-label="Cerrar"><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button>
+        <button class="lb-btn lb-prev" type="button" id="lbPrev" aria-label="Foto anterior"><svg class="icon" aria-hidden="true"><use href="#i-arrow-left"/></svg></button>
+        <button class="lb-btn lb-next" type="button" id="lbNext" aria-label="Foto siguiente"><svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></button>
+        <img id="lbImg" src="" alt="" width="1200" height="750">
+        <p class="lb-cap"><strong id="lbTitle"></strong><span id="lbDesc"></span></p>
+      </div>
+    </dialog>
+
+    <section class="section about" id="sobre-mi">
+      <div class="container">
+        <div class="about-card" data-reveal>
+          <span class="about-glyph about-glyph--ice" aria-hidden="true"><svg class="icon"><use href="#i-snowflake"/></svg></span>
+          <span class="about-glyph about-glyph--power" aria-hidden="true"><svg class="icon"><use href="#i-zap"/></svg></span>
+
+          <div class="about-copy">
+            <span class="eyebrow eyebrow--light">Quién soy</span>
+            <h2>Detrás de GODER JS,<br><span class="name-script">Jose Severich.</span></h2>
+            <p>Soy técnico de aire acondicionado y electricista domiciliario. Trabajo con una idea simple: hacer las cosas bien, explicarte cada paso y dejar todo funcionando como corresponde.</p>
+            <p>En GODER JS vas a encontrar atención directa y un servicio integral para el confort y la seguridad de tu casa.</p>
+            <span class="about-stamp"><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg>Responsabilidad y confianza</span>
+          </div>
+
+          <div class="values-grid">
+            <div class="value-card">
+              <span class="value-icon value-icon--ice"><svg class="icon" aria-hidden="true"><use href="#i-message"/></svg></span>
+              <div>
+                <h3>Atención directa</h3>
+                <p>Hablás conmigo de principio a fin, sin intermediarios.</p>
+              </div>
+            </div>
+            <div class="value-card" style="--delay:.06s">
+              <span class="value-icon value-icon--power"><svg class="icon" aria-hidden="true"><use href="#i-layers"/></svg></span>
+              <div>
+                <h3>Dos especialidades</h3>
+                <p>Aire acondicionado y electricidad en una misma visita.</p>
+              </div>
+            </div>
+            <div class="value-card" style="--delay:.12s">
+              <span class="value-icon value-icon--power"><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg></span>
+              <div>
+                <h3>Horario</h3>
+                <p>Lunes a viernes, de 8 a 19 h.</p>
+              </div>
+            </div>
+            <div class="value-card" style="--delay:.18s">
+              <span class="value-icon value-icon--ice"><svg class="icon" aria-hidden="true"><use href="#i-wind"/></svg></span>
+              <div>
+                <h3>Respuesta ágil</h3>
+                <p>Te respondo a la brevedad para coordinar tu consulta.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section process" id="proceso">
+      <div class="container">
+        <div class="section-head center" data-reveal>
+          <span class="eyebrow">Cómo trabajo</span>
+          <h2>Simple, claro y <span class="hl">sin vueltas</span>.</h2>
+          <p>Tres pasos para pasar del mensaje al trabajo terminado.</p>
+        </div>
+
+        <div class="process-grid">
+          <article class="step-card" data-reveal style="--delay:.04s">
+            <span class="step-ghost" aria-hidden="true">01</span>
+            <span class="step-icon"><svg class="icon" aria-hidden="true"><use href="#i-message"/></svg></span>
+            <p class="step-label">Paso 01</p>
+            <h3>Me contás</h3>
+            <p>Escribime qué trabajo necesitás y en qué zona o barrio estás.</p>
+          </article>
+          <article class="step-card" data-reveal style="--delay:.1s">
+            <span class="step-ghost" aria-hidden="true">02</span>
+            <span class="step-icon"><svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg></span>
+            <p class="step-label">Paso 02</p>
+            <h3>Coordinamos</h3>
+            <p>Te paso un presupuesto y acordamos el día y horario de la visita.</p>
+          </article>
+          <article class="step-card" data-reveal style="--delay:.16s">
+            <span class="step-ghost" aria-hidden="true">03</span>
+            <span class="step-icon"><svg class="icon" aria-hidden="true"><use href="#i-check-circle"/></svg></span>
+            <p class="step-label">Paso 03</p>
+            <h3>Queda listo</h3>
+            <p>Realizo el trabajo y revisamos que todo funcione como corresponde.</p>
+          </article>
+        </div>
+
+        <div class="process-cta" data-reveal style="--delay:.2s">
+          <a class="btn btn--primary js-wa" data-wa="Hola GODER JS! Quiero empezar una consulta." href="#contacto">
+            Empezar por WhatsApp
+            <svg class="icon icon--fill" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+          </a>
+          <span><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg>Lun a Vie · 8 a 19 h</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq" id="preguntas">
+      <div class="container faq-grid">
+        <div class="faq-intro" data-reveal>
+          <span class="eyebrow">Preguntas frecuentes</span>
+          <h2>Antes de escribirme.</h2>
+          <p>Dejé las respuestas a las dudas más comunes. Si te queda algo pendiente, escribime y lo vemos.</p>
+          <a class="btn btn--dark js-wa" data-wa="Hola GODER JS! Tengo una consulta." href="#contacto">
+            Hacer una consulta
+            <svg class="icon icon--fill" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+          </a>
+        </div>
+
+        <div class="faq-list">
+          <details class="faq-item" data-reveal style="--delay:.04s">
+            <summary>
+              <span class="faq-q">¿Qué incluye el mantenimiento preventivo de aire?</span>
+              <span class="faq-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="faq-body">
+              <p>Es el servicio pensado para mantener el equipo funcionando bien y prevenir fallas. Contame qué equipo tenés y qué necesitás, y te paso el detalle del trabajo.</p>
+            </div>
+          </details>
+          <details class="faq-item" data-reveal style="--delay:.08s">
+            <summary>
+              <span class="faq-q">¿Hacen instalaciones eléctricas nuevas?</span>
+              <span class="faq-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="faq-body">
+              <p>Sí. Realizo instalaciones eléctricas nuevas y también la instalación o el recambio de tomacorrientes en tu casa.</p>
+            </div>
+          </details>
+          <details class="faq-item" data-reveal style="--delay:.12s">
+            <summary>
+              <span class="faq-q">¿Cómo pido un presupuesto?</span>
+              <span class="faq-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="faq-body">
+              <p>Escribime por WhatsApp contándome qué trabajo necesitás y en qué zona o barrio estás. Te respondo a la brevedad con los detalles y coordinamos.</p>
+            </div>
+          </details>
+          <details class="faq-item" data-reveal style="--delay:.16s">
+            <summary>
+              <span class="faq-q">¿Qué horario de atención tienen?</span>
+              <span class="faq-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="faq-body">
+              <p>Atiendo de lunes a viernes, de 8 a 19 h. Si me escribís fuera de ese horario, te respondo apenas pueda.</p>
+            </div>
+          </details>
+          <details class="faq-item" data-reveal style="--delay:.2s">
+            <summary>
+              <span class="faq-q">¿Trabajan en mi zona?</span>
+              <span class="faq-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="faq-body">
+              <p>Contame tu barrio o zona al escribirme y te confirmo la disponibilidad para coordinar la visita.</p>
+            </div>
+          </details>
+          <details class="faq-item" data-reveal style="--delay:.24s">
+            <summary>
+              <span class="faq-q">¿Puedo consultar por aire y electricidad a la vez?</span>
+              <span class="faq-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="faq-body">
+              <p>Claro. Contame todo lo que necesitás en un mismo mensaje y organizamos el trabajo de la mejor manera.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contacto">
+      <span class="contact-glyph contact-glyph--ice" aria-hidden="true"><svg class="icon"><use href="#i-snowflake"/></svg></span>
+      <span class="contact-glyph contact-glyph--power" aria-hidden="true"><svg class="icon"><use href="#i-zap"/></svg></span>
+
+      <div class="container contact-grid">
+        <div class="contact-copy" data-reveal>
+          <span class="eyebrow eyebrow--light">Contacto</span>
+          <h2>Contame qué necesitás y te paso un <span class="text-gradient">presupuesto</span>.</h2>
+          <p>Escribime por WhatsApp con estos dos datos y agilizamos la consulta.</p>
+
+          <ul class="contact-steps">
+            <li>
+              <span class="mini-check"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg></span>
+              <div>
+                <strong>Qué trabajo necesitás</strong>
+                <span>Instalación, mantenimiento, reparación o una consulta.</span>
+              </div>
+            </li>
+            <li>
+              <span class="mini-check"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg></span>
+              <div>
+                <strong>En qué zona o barrio estás</strong>
+                <span>Así coordino la visita y la disponibilidad.</span>
+              </div>
+            </li>
+          </ul>
+
+          <div class="hours-card">
+            <span class="hours-icon"><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg></span>
+            <div>
+              <strong>Horario de atención</strong>
+              <span>Lunes a viernes, de 8 a 19 h.</span>
+            </div>
+          </div>
+
+          <div class="contact-direct-row">
+            <a class="contact-direct js-wa" data-wa="Hola GODER JS! Quiero pedir un presupuesto." href="#contacto">
+              <svg class="icon icon--fill" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+              Escribime directo por WhatsApp
+              <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg>
+            </a>
+            <a class="contact-direct contact-direct--call" href="tel:+5493515580535">
+              <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>
+              Llamame al 351 558-0535
+            </a>
+          </div>
+
+          <p class="contact-tagline">Responsabilidad y confianza.</p>
+        </div>
+
+        <div class="form-card" data-reveal style="--delay:.1s">
+          <div class="form-head">
+            <span class="form-icon"><svg class="icon" aria-hidden="true"><use href="#i-message"/></svg></span>
+            <div>
+              <h3>Pedí tu presupuesto</h3>
+              <p>Completá los datos y armamos el mensaje juntos.</p>
+            </div>
+          </div>
+
+          <form id="quoteForm" novalidate>
+            <div class="form-row">
+              <div class="field">
+                <label for="name">Nombre</label>
+                <input id="name" name="name" type="text" autocomplete="name" placeholder="Tu nombre" required>
+              </div>
+              <div class="field">
+                <label for="zone">Zona o barrio</label>
+                <input id="zone" name="zone" type="text" autocomplete="address-level2" placeholder="Dónde estás" required>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="service">¿Qué necesitás?</label>
+              <div class="select-wrap">
+                <select id="service" name="service" required>
+                  <option value="" selected disabled>Elegí un servicio</option>
+                  <option>Instalación de aire acondicionado</option>
+                  <option>Mantenimiento de aire acondicionado</option>
+                  <option>Reparación de aire acondicionado</option>
+                  <option>Instalaciones eléctricas</option>
+                  <option>Instalación o recambio de tomacorrientes</option>
+                  <option>Otra instalación o reparación</option>
+                </select>
+                <svg class="icon" aria-hidden="true"><use href="#i-chevron-down"/></svg>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="details">Contame un poco más <span>Opcional</span></label>
+              <textarea id="details" name="details" rows="3" placeholder="Tipo de equipo, trabajo a realizar..."></textarea>
+            </div>
+
+            <button class="btn btn--primary btn--full" type="submit">
+              <svg class="icon icon--fill" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+              Preparar mensaje
+              <svg class="icon icon--arrow" aria-hidden="true"><use href="#i-arrow-right"/></svg>
+            </button>
+            <p class="form-privacy">Al continuar se abre WhatsApp con el mensaje armado. No se guarda información en esta web.</p>
+            <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+            <a class="form-fallback" id="formFallback" href="#" target="_blank" rel="noopener noreferrer" hidden>Abrir WhatsApp manualmente</a>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="#inicio" aria-label="GODER JS, ir al inicio">
+          <span class="brand-mark"><svg viewBox="0 0 48 48" aria-hidden="true"><use href="#i-brand"/></svg></span>
+          <span class="brand-copy">
+            <span class="brand-name">GODER <em>JS</em></span>
+            <span class="brand-sub">Técnico Integral</span>
+          </span>
+        </a>
+        <p>Aire acondicionado y electricidad domiciliaria. Instalaciones y reparaciones con responsabilidad y confianza.</p>
+        <span class="footer-tagline">Jose Severich</span>
+      </div>
+
+      <div class="footer-links">
+        <h3>Navegación</h3>
+        <a href="#servicios">Servicios</a>
+        <a href="#trabajos">Trabajos</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#proceso">Cómo trabajo</a>
+        <a href="#preguntas">Preguntas</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+
+      <div class="footer-links">
+        <h3>Contacto</h3>
+        <a class="js-wa" data-wa="Hola GODER JS! Quiero hacer una consulta." href="#contacto">WhatsApp</a>
+        <a href="tel:+5493515580535">351 558-0535</a>
+        <p>Lunes a viernes<br>de 8 a 19 h</p>
+        <p>Jose Severich<br>Técnico Integral</p>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© <span id="year">2026</span> GODER JS. Todos los derechos reservados.</p>
+      <a href="#inicio">Volver arriba <svg class="icon" aria-hidden="true"><use href="#i-arrow-up"/></svg></a>
+    </div>
+  </footer>
+
+  <a class="wa-float js-wa" data-wa="Hola GODER JS! Quiero hacer una consulta." href="#contacto" aria-label="Abrir WhatsApp">
+    <span class="wa-float__tip">Escribinos</span>
+    <svg class="icon icon--fill" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+  </a>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
